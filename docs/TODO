@@ -1,0 +1,17 @@
+//TODO  1: Verify using Log4j2 with Selenium. Need to check the property file loading
+//TODO 2 : Improve the maven file in the test automaton framework
+//TODO 3: Complete data driven testing learning
+//TODO 4 : Prepare Fluent wait presentation and examples
+//TODO 5 : Learn GitHub integration
+
+
+//TODO : For the Selenium training
+//TODO ST01 : Improve the code and upload into the Github
+
+
+//TODO : Bug fixes
+//TODO BF01: Actions class is not working for SHIFT usage for character capitalization
+
+
+//TODO : Framework improvements
+//TODO FI01: Handle the null pointer exceptions properly to identify the cause of the error

@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="testsuite">
+    <test name="test1" enabled="false" parallel="methods" thread-count="5">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+
+        </groups>
+
+        <classes>
+
+            <class name="com.pragmatic.testng.TestNGExample1"/>
+            <class name="com.pragmatic.testng.TestNGExample2"/>
+            <class name="com.pragmatic.testng.TestNGExample3"/>
+        </classes>
+
+
+    </test>
+
+
+    <test name="regression">
+
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+
+        </groups>
+
+        <packages>
+            <package name="com.orange.login"/>
+            
+        </packages>
+
+        <classes>
+
+            <class name="com.pragmatic.testng.TestNGExample1"/>
+            <class name="com.pragmatic.testng.TestNGExample2"/>
+            <class name="com.pragmatic.testng.TestNGExample3"/>
+        </classes>
+
+
+    </test>
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+
+
+
+
+</suite>
