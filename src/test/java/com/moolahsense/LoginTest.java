@@ -15,7 +15,7 @@ public class LoginTest  extends TestBase{
 
     @Test
     public void testValidUserLogin(){
-
+        System.out.println( "");
         String welcomeMessage = "Kunwar Bir Singh,";
         webDriver.get(MSData.BASE_URL);
         webDriver.findElement(By.id("username")).sendKeys(MSData.user);
